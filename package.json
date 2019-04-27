@@ -1,20 +1,37 @@
 {
-  "name": "fetch-data",
+  "name": "@taichi-master/fetch-data",
   "version": "0.0.1",
-  "description": "Better fetch call experience.",
+  "description": "Better fetch experience.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js}",
+      "!**/node_modules/**"
+    ],
+    "automock": false,
+    "setupFiles": [
+      "<rootDir>/src/setupTests.js"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/taichi-master/fetch-data.git"
   },
-  "keywords": ["fetch"],
+  "keywords": [
+    "fetch"
+  ],
   "author": "Kei Sing Wong",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/taichi-master/fetch-data/issues"
   },
-  "homepage": "https://github.com/taichi-master/fetch-data#readme"
+  "homepage": "https://github.com/taichi-master/fetch-data#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.7.1",
+    "jest-fetch-mock": "^2.1.2"
+  }
 }
