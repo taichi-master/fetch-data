@@ -4,6 +4,7 @@
   "description": "Better fetch experience.",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js ./src",
     "test": "jest"
   },
   "jest": {
@@ -31,6 +32,8 @@
   "homepage": "https://github.com/taichi-master/fetch-data#readme",
   "dependencies": {},
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
     "jest": "^24.7.1",
     "jest-fetch-mock": "^2.1.2"
   }

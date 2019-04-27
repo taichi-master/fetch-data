@@ -21,15 +21,16 @@ describe( 'fetch-data', function () {
           expected = { data: 123 }
 
     expect( actual ).toEqual( expected )
-    
+
   } )
 
   it( 'should not work', async function () {
     fetch.mockRejectOnce( { status: 500, statusText: 'some error' } )
 
     try {
-      const res = await fetchData(),
-            actual = 'nothing',
+      await fetchData()
+      
+      const actual = 'nothing',
             expected = 'something'
 
       expect( actual ).toBe( expected )
