@@ -1,6 +1,6 @@
 {
   "name": "@taichi-master/fetch-data",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Better fetch experience.",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     ],
     "automock": false,
     "setupFiles": [
-      "<rootDir>/src/setupTests.js"
+      "<rootDir>/src/setupJest.js"
     ]
   },
   "repository": {
